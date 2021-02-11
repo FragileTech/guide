@@ -11,8 +11,13 @@ commit of the repository you need to work on.
 We do not enforce any particular branch naming policy, but we recommend using prefixes, like `fix`, `feature` or `improvement`, for example.
 
 ### Resources
+
+#### Accessing GitHub
 - [Generating a new ssh key](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 - [Adding a new ssh key to your github account](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
+- [How to avoid 2FA errors using tokens](https://medium.com/@ginnyfahs/github-error-authentication-failed-from-command-line-3a545bfd0ca8)
+
+#### Learning Git
 - [Git Handbook](https://guides.github.com/introduction/git-handbook/): Quick introduction to Git.
 - [GitHub Git cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf): 
   Contains examples of the most commonly used commands.
@@ -20,7 +25,7 @@ We do not enforce any particular branch naming policy, but we recommend using pr
   Introductory tutorial illustrating the importance of using Git in a collaborative environment. Incorporates a summary of the essential commands, and helpful links to Git bibliography and interactive courses.
 - [Pro Git book](https://git-scm.com/book/en/v2): Contains everything there is to know about Git.
 
-#### Interactive labs
+#### Interactive Git labs
 Online courses and step-by-step demonstrations explaining the most popular Git commands and collaborative processes: 
 
 - [Fundamentals of Git](https://gitimmersion.com/lab_01.html)
