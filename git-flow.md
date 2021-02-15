@@ -9,7 +9,7 @@ Git facilitates the addition of novel content through the use of _branches_, bif
 
 Git workflow is the basis that supports the entire development process, promoting the collaboration among team members while avoiding redundant tasks or multiples copies. It consists in a set of steps outlined in the following picture: 
 
-<img style="float: right;" src =images/git-flow.pdf> 
+<img style="float: right;" src =images/git-flow.png> 
 
 1. SETUP: Download an online repository using `git clone [url repo]` or start your own local Git repository using `git init`.
 2. BRANCH: Create your safe environment using `git branch [branch-name]`. This isolates your local work and allows testing additional features. 
