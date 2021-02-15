@@ -6,9 +6,10 @@ The overview section provides a starting point to understand the topic described
 in the template.
 
 ### Introduction
-* Short description of the topic assuming the reader has no prior knowledge of the topic.
+* Short description of the topic assuming the reader has no prior knowledge of the topic
 * Estimated time to understand the topic
 * Estimated level of difficulty (Introductory, Easy, Medium, Advanced, Pro)
+* Brief description of the core concepts explained in the current topic
 
 ### TLRD
 * Super quick summary of the contents of `topic.md`.
