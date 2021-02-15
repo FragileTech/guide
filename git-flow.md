@@ -3,7 +3,20 @@
 ![Image](images/git-flow-app.png?raw=true)
 
 # How to add more code to the project
+A fundamental key in collaborative projects is having control (or a tracking history) over the modifications made on the project. Git is a popular distributed version control system broadly used in these environments which, besides achieving this demand, provides full access to every change performed on the project. 
 
+Git facilitates the addition of novel content through the use of _branches_, bifurcations in the tracking history of the project that permits the creation (or update) of extra features in a secure, fully controlled sandbox. New implementations are delivered to the principal line once they receive the green light.
+
+Git workflow is the basis that supports the entire development process, promoting the collaboration among team members while avoiding redundant tasks or multiples copies. It consists in a set of steps outlined in the following picture: 
+
+<img style="float: right;" src =images/git-flow.pdf> 
+
+1. SETUP: Download an online repository using `git clone [url repo]` or start your own local Git repository using `git init`.
+2. BRANCH: Create your safe environment using `git branch [branch-name]`. This isolates your local work and allows testing additional features. 
+3. STAGE & COMMIT: Stage your recent work using `git add [modified-file]` and save it with `git commit -m "[comment]"`.
+4. SHARE: Time to upload your project. Add a Git URL using an alias with `git remote add [alias] [url repo]` in case that your project has been started locally. Upload your local branch commits to the remote repository using `git push [alias] [local-branch]`.
+5. REVIEW: Launch a new __Pull Request__ to publicize your modifications and start a reviewing process. This opens a discussion with your teammates about the correctness of your changes. If the proposal succeeds, your modifications will be merged into the main line. Reviewers can ask you to include extra adjustments to approve your code.
+ 
 ## 1. Create feature branch / hot fix branch
 On your fork, create a new branch from the latest upstream master branch
 commit of the repository you need to work on.
