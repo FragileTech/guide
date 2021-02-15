@@ -14,6 +14,8 @@ import os
 from pathlib import Path
 import sys
 
+from invoke import run
+
 
 sys.path.insert(0, os.path.abspath("../../"))
 sys.setrecursionlimit(1500)
@@ -26,6 +28,19 @@ def read_version() -> str:
         return file.read()
 
 
+def symlink_guide():
+    source_dir = Path(__file__).parent
+    if (source_dir.parent / "build").exists():
+        run(f"rm -rf {source_dir.parent / 'build'}")
+    if (source_dir / "guide").exists():
+        run(f"rm -rf {source_dir / 'guide'}")
+    if (source_dir / "template").exists():
+        run(f"rm -rf {source_dir / 'template'}")
+    run(f"ln -sr {source_dir.parent.parent / 'guide'} {source_dir}")
+    run(f"ln -sr {source_dir.parent.parent / 'template'} {source_dir}")
+
+
+symlink_guide()
 # -- Project information -----------------------------------------------------
 
 project = "Fragile Guide"
@@ -59,12 +74,12 @@ extensions = [
     "myst_parser",
     # "sphinx.ext.githubpages",
 ]
-suppress_warnings = ["image.nonlocal_uri"]
+#suppress_warnings = ["image.nonlocal_uri"]
 autodoc_typehints = "description"
 
 
 # Ignore sphinx-autoapi warnings on multiple target description
-suppress_warnings.append("ref.python")
+#suppress_warnings.append("ref.python")
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
@@ -72,7 +87,6 @@ templates_path = ["_templates"]
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = []
 
 
 # -- Options for HTML output -------------------------------------------------

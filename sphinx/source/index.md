@@ -2,24 +2,9 @@
 ```{include} ../../README.md
 ```
 
-# Table of contents
-
-```{toctree}
----
-maxdepth: 5
-caption: Git workflow
----
-guide/git_flow/git-flow.md
+```{include} ./guide/index.md
 ```
 
-```{toctree}
----
-maxdepth: 5
-caption: Development
----
-guide/python/environment_setup.md
-guide/python/python_style_guide.md
-```
 
 ```{toctree}
 ---
@@ -34,9 +19,4 @@ template/5_debugging.md
 template/6_bibliography.md
 ```
 
-
-# Indices and tables
-
-{ref}`genindex`
-{ref}`modindex`
 {ref}`search`
