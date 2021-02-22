@@ -129,7 +129,7 @@ Online courses and step-by-step demonstrations explaining the most popular Git c
    https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
    
 .. [generating_gh_tokens] 
-   Explain how to use authentication tokens to avoid 2FA errors.
+   Explains how to use authentication tokens to avoid 2FA errors.
 
    https://medium.com/@ginnyfahs/github-error-authentication-failed-from-command-line-3a545bfd0ca8
 ```
@@ -140,4 +140,32 @@ Online courses and step-by-step demonstrations explaining the most popular Git c
    GitHub.com official documentation
 
    https://docs.github.com/en/github
+```
+
+#### Git Basics 
+```{eval-rst}
+.. [Saving_Changes]
+   Introductory tutorial to the saving process in Git. 
+   
+   https://www.atlassian.com/git/tutorials/saving-changes 
+   
+.. [Recording_Changes]
+   Page containing a complete description about the three-stage process in Git.
+   
+   https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
+
+.. [Three_trees]
+   Page containing an introduction to Git's internal state management system and reset command. 
+   
+   https://www.atlassian.com/git/tutorials/undoing-changes/git-reset
+   
+.. [branch]
+   Explains the basics about branching in Git. 
+   
+   https://www.atlassian.com/git/tutorials/using-branches
+
+.. [merge_basic]
+   Gentle tutorial explaining the concepts and mechanisms behind `git merge`.
+   
+   https://www.atlassian.com/git/tutorials/using-branches/git-merge
 ```
