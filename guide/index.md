@@ -6,6 +6,7 @@ maxdepth: 5
 caption: Our workflow
 ---
 guide/git_flow/overview.md
+guide/git_flow/git_basics.md
 guide/git_flow/git-flow.md
 guide/git_flow/FAQ.md
 guide/git_flow/how_to.md
