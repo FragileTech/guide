@@ -1,3 +1,4 @@
+# Introduction to Git
 Git is a powerful tool that permits parallel and asynchronous work while maximizing productivity and collaboration among team members. Despite the countless benefits Git offers, it requires time and dedication to learn and master. In this section, we will try to cover and define the most general Git concepts that may lead to misleading conclusions. Having an accurate understanding of these terms will facilitate immensely your learning path. This section summarizes the content of different reviews and guides presented throughout this page; we strongly encourage to practice the fundamental Git utilities using {ref}`this lab<git_lab_branching>`, which includes a beginner-oriented tour about the concepts you are working on. 
 
 ## The three stages of Git 
@@ -6,7 +7,7 @@ Git is a powerful tool that permits parallel and asynchronous work while maximiz
 :width: 400px
 :align: center
 
-![commit](guide/git_flow/images/three_stages.png)
+![commit](images/three_stages.png)
 
 :::
 
@@ -23,9 +24,9 @@ Files in a working directory can be in two states: __tracked__, files that were 
 ### Resources 
 
 You will discover more information and material about these concepts in the following links:
-* {ref}`An introductory tutorial<Saving_Changes>` to saving changes in Git.
-* {ref}`A (maybe excessive) complete description<Recording_Changes>` of the recording process in Git.
-* Tutorial focused on the Git command `reset`, the first part contains an enlightening {ref}`description<Three_trees>` about Git's internal state management system. 
+* An introductory {ref}`tutorial <saving-changes>` to saving changes in Git.
+* A (maybe too comprehensive) {ref}` complete description <recording-changes>` of the recording process in Git.
+* Tutorial focused on the Git command `reset`, the first part contains an enlightening {ref}`description <Three_trees>` about Git's internal state management system. 
 
 
 ## Commit, branches and heads
@@ -36,7 +37,7 @@ As previously mentioned, `git commit` is a daily command used to save the releva
 :width: 300px
 :align: left
 
-![commit](guide/git_flow/images/commit.png)
+![commit](images/commit.png)
 
 New commit is based off its ancestors
 :::
@@ -51,7 +52,7 @@ Moving to the new branch, new commits are referred now by `new_feature`. We can 
 :width: 300px
 :align: left
 
-![branch1](guide/git_flow/images/branch1.png)
+![branch1](images/branch1.png)
 
 Branches act as pointers to specific commits in Git history. Sitting on `new_feature`, new commits are referred by this branch
 :::
@@ -60,7 +61,7 @@ Branches act as pointers to specific commits in Git history. Sitting on `new_fea
 :width: 300px
 :align: right
 
-![branch](guide/git_flow/images/branch2.png)
+![branch](images/branch2.png)
 
 Going back to the main branch, new commits will generate a bifurcation in history. Commits from different branches are disconnected
 :::
@@ -71,7 +72,7 @@ Once we are satisfied with the changes made in our code, we can integrate the mu
 :width: 300px
 :align: center
 
-![branch](guide/git_flow/images/branch3.png)
+![branch](images/branch3.png)
 
 `git merge` generates a new commit that unifies the two history lines 
 :::
@@ -81,5 +82,6 @@ Closely related to the fact that branches act as a pointer is the concept of `HE
 ### Resources 
 
 If you are interested in delving into the ideas explored in this section, explore the following links:
-* {ref}You will find all the information you need about Git branches in this `page<branch>`.
-* {ref}Enlightening `tutorial<merge_basic>` about merge command. It includes the multiple options this command offers and the different merge strategies. 
+* You will find all the information you need about Git branches in this {ref}`page<branch>`.
+* Enlightening {ref}`tutorial<merge-basic>` about merge command. It includes the multiple 
+  options this command offers, and the different merge strategies. 

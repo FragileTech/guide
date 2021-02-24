@@ -144,17 +144,17 @@ Online courses and step-by-step demonstrations explaining the most popular Git c
 
 #### Git Basics 
 ```{eval-rst}
-.. [Saving_Changes]
+.. [saving-changes]
    Introductory tutorial to the saving process in Git. 
    
    https://www.atlassian.com/git/tutorials/saving-changes 
    
-.. [Recording_Changes]
+.. [recording-changes]
    Page containing a complete description about the three-stage process in Git.
    
    https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
 
-.. [Three_trees]
+.. [three-trees]
    Page containing an introduction to Git's internal state management system and reset command. 
    
    https://www.atlassian.com/git/tutorials/undoing-changes/git-reset
@@ -164,7 +164,7 @@ Online courses and step-by-step demonstrations explaining the most popular Git c
    
    https://www.atlassian.com/git/tutorials/using-branches
 
-.. [merge_basic]
+.. [merge-basic]
    Gentle tutorial explaining the concepts and mechanisms behind `git merge`.
    
    https://www.atlassian.com/git/tutorials/using-branches/git-merge
