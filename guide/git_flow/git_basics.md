@@ -16,17 +16,17 @@ Every file in a Git repository goes through three stages: __modified__, __staged
  * The last step consists in _committing_ your modifications. `git commit` records a snapshot of the changes kept in the staging area while creating a new timestamp in the history. Adding the option `-m` allows you to pass a commit message. Git maintains a history of all the commits that were made, generating a "timeline" with commits ordered in time. Sitting in a particular commit, all previous ones are called _ancestors_, usually designated with arrows in descriptive illustrations.
 
 :::{admonition} Remember
-:class: note
+:class: important
 Files in a working directory can be in two states: __tracked__, files that were in the previous snapshot or were added to the staging area; or __untracked__, files that were not present in the last commit and are not staged. Git will not include untracked files in the next historical snapshot until you explicitly add them. Git notices new modifications introduced in tracked files. 
 :::
 
-###### Resources 
-
+:::{admonition} Resources
+:class: seealso 
 You will discover more information and material about these concepts in the following links:
 * An introductory {ref}`tutorial <saving-changes>` to saving changes in Git.
 * A (maybe too comprehensive) {ref}` complete description <recording-changes>` of the recording process in Git.
 * Tutorial focused on the Git command `reset`, the first part contains an enlightening {ref}`description<three-trees>` of Git's internal state management system. 
-
+:::
 
 ## Commit, branches and heads
 
@@ -67,7 +67,7 @@ Going back to the branch `main`, a new commits will generate a bifurcation in th
 :::
 
 
-
+      
 
 
 Once we are satisfied with the changes made in our code, we can integrate the multiple commits created in our supporting branch into the main line by using `git merge`. This sentence generates a dedicated commit that combines the development of the two branches (current and target). Merge commits are unique as they are based on two parent commits. One should notice that merge commits are produced in the current branch; `git merge` updates the current branch with the modifications made in the target branch, leaving the latter unaffected. 
@@ -83,9 +83,10 @@ Once we are satisfied with the changes made in our code, we can integrate the mu
 
 Closely related to the fact that branches act as a pointer is the concept of `HEAD`. `HEAD` is the name used to refer to the commit we are working on. It normally points to the most recent commit (which is also referred to by the current branch). We change the position of `HEAD` by using `git checkout`; when you are applying this sentence to shift from one branch to another, what you are doing is migrating the tip `HEAD` between these branches. We can move `HEAD` to a specific commit (and detached it from a branch) by using `git checkout` and the label of the commit. In the same way, we are able to move the position of a branch by typing `git branch -f [branch_name] [position]`. 
 
-### Resources 
-
+:::{admonition} Resources
+:class: seealso 
 If you are interested in delving into the ideas explored in this section, explore the following links:
 * You will find all the information you need about Git branches on this {ref}`page<branch>`.
 * Enlightening {ref}`tutorial<merge-basic>` about merge command. It includes the multiple 
   options this command offers, and the different merge strategies. 
+:::
