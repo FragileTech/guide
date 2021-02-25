@@ -46,14 +46,15 @@ Besides, this mode opens the door to rewriting your Git history, using `git reba
 
 `git rebase` not only allows you to rewrite your history, but it reinforces the concept of branches as pointers: next to `git rebase` must be placed a reference, either the label that refers to an individual commit (to rewrite your history); or a target branch to integrate your changes linearly. 
 
-###### Resources 
-
+:::{admonition} Resources
+:class: seealso 
 You will be able to find more literature about merging utilities in the following links: 
 * {ref}`Tutorial<merge-basic>` about `git merge`. 
 * In-depth {ref}`tutorial<rebase-basic>` about `git rebase`, including the interactive mode. 
 * {ref}`Conceptual discussion<rebase-vs-merge>` about the two merging strategies.
 * Immerse in the most complete {ref}`source<pro_git_book>` about Git. 
 * We encourage to exercise `merge` and `rebase` tools by using the {ref}`interactive tutorials<git_lab_branching>`.  
+:::
 
 ## Rewriting history
 Before pushing your modifications to your shared repository, having a clean, organized history is strongly recommended to help the reviewing process to your comrades (and, of course, to facilitate your understanding of the working flow). Git offers multiple work flow customization tools that give you total control over the project development. We mentioned `git rebase -i`, but there are more options to restructure your Git commits, such as `git commit --amend`. These {ref}`two<rewriting_git_history>` essential {ref}`references<rewriting_git_history2>` contain __everything__ you should know about history-rewriting commands. These sources expose the topic in such a precise and straightforward manner that we are unable to include something relevant to the discussion.
