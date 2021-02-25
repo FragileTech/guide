@@ -31,7 +31,7 @@ Online courses and step-by-step demonstrations explaining the most popular Git c
     https://gitimmersion.com/lab_01.html
     
 .. [git_lab_branching] 
-    Interactive lab to learn how git branching work.
+    Interactive lab to learn how git branching works.
 
     https://learngitbranching.js.org/
 
@@ -68,6 +68,10 @@ Online courses and step-by-step demonstrations explaining the most popular Git c
 
     https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History
     
+.. [rewriting_git_history2]
+    Tutorial listing the rewriting option Git offers.
+    
+    https://www.atlassian.com/git/tutorials/rewriting-history#git-rebase-i
 ```
 
 ### GitHub
@@ -168,4 +172,14 @@ Online courses and step-by-step demonstrations explaining the most popular Git c
    Gentle tutorial explaining the concepts and mechanisms behind `git merge`.
    
    https://www.atlassian.com/git/tutorials/using-branches/git-merge
+
+.. [rebase-basic]
+   Tutorial explaining the concepts and mechanisms behind `git rebase`.
+   
+   https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase
+   
+.. [rebase-vs-merge]
+   A clear overview over the two merging strategies
+   
+   https://www.atlassian.com/git/tutorials/merging-vs-rebasing
 ```
