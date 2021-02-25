@@ -68,6 +68,8 @@ Going back to the branch `main`, a new commits will generate a bifurcation in th
 
 
 
+
+
 Once we are satisfied with the changes made in our code, we can integrate the multiple commits created in our supporting branch into the main line by using `git merge`. This sentence generates a dedicated commit that combines the development of the two branches (current and target). Merge commits are unique as they are based on two parent commits. One should notice that merge commits are produced in the current branch; `git merge` updates the current branch with the modifications made in the target branch, leaving the latter unaffected. 
 
 :::{figure-md} branch3
