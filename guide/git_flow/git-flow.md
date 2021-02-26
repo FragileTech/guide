@@ -14,6 +14,11 @@ set of steps outlined in the following document:
 Git workflow
 :::
 
+1. SETUP: Download an online repository using `git clone [url repo]` or start your own local Git repository using `git init`.
+2. BRANCH: Create your safe environment using `git branch [branch-name]`. This isolates your local work and allows testing additional features. 
+3. STAGE & COMMIT: Stage your recent work using `git add [modified-file]` and save it with `git commit -m "[comment]"`.
+4. SHARE: Time to upload your project. Add a Git URL using an alias with `git remote add [alias] [url repo]` in case that your project had been started locally. Upload your local branch commits to the remote repository using `git push [alias] [local-branch]`.
+5. REVIEW: Launch a new __Pull Request__ to publicize your modifications and start a reviewing process. This opens a discussion with your teammates concerning the correctness of your changes. If the proposal succeeds, your modifications will be merged into the main line. Reviewers can ask you to include extra adjustments to approve your code.
 
 ## 1. Open an issue
 We use issues to keep track of the evolution of our software projects. We should create an issue
