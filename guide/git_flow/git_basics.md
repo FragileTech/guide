@@ -5,7 +5,7 @@ Git is a powerful tool that permits parallel and asynchronous work while maximiz
 
 
 :::{figure-md} three_stages
-:width: 400px
+:width: 300px
 :align: center
 ![stages](images/three.png)
 :::
