@@ -3,12 +3,13 @@ Git is a powerful tool that permits parallel and asynchronous work while maximiz
 
 ## The three stages of Git 
 
+
 :::{figure-md} three_stages
 :width: 400px
 :align: center
-
-![stages](images/three_stages.png)
+![stages](images/three.png)
 :::
+
 
 Every file in a Git repository goes through three stages: __modified__, __staged__ and __committed__.
  * _Modified_ is the stage where you make some additions (or _modifications_) to the project. Changes are applied in the working directory (the Git tree in sync with your local machine), leaving unchanged the original code.
@@ -49,7 +50,7 @@ Moving to the new branch, new commits will be referred now by `new_feature`. We 
 
 
 :::{figure-md} branch1
-:width: 300px
+:width: 310px
 :align: left
 
 ![branch1](images/branch1.png)
@@ -58,7 +59,7 @@ Branches are __pointers__ to specific commits in Git history. Sitting on the new
 :::
 
 :::{figure-md} branch2
-:width: 300px
+:width: 310px
 :align: right
 
 ![branch2](images/branch2.png)
