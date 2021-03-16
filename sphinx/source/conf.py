@@ -34,10 +34,10 @@ def symlink_guide():
         run(f"rm -rf {source_dir.parent / 'build'}")
     if (source_dir / "guide").exists():
         run(f"rm -rf {source_dir / 'guide'}")
-    if (source_dir / "template").exists():
-        run(f"rm -rf {source_dir / 'template'}")
+    if (source_dir / "course").exists():
+        run(f"rm -rf {source_dir / 'course'}")
     run(f"ln -sr {source_dir.parent.parent / 'guide'} {source_dir}")
-    run(f"ln -sr {source_dir.parent.parent / 'template'} {source_dir}")
+    run(f"ln -sr {source_dir.parent.parent / 'course'} {source_dir}")
 
 
 symlink_guide()

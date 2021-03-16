@@ -11,12 +11,13 @@
 maxdepth: 5
 caption: Guide template
 ---
-template/1_overview.md
-template/2_topic.md
-template/3_how_to.md
-template/4_FAQ.md
-template/5_debugging.md
-template/6_bibliography.md
+course/index.md
+course/overview.md
+course/topic.md
+course/how_to.md
+course/FAQ.md
+course/debugging.md
+course/bibliography.md
 ```
 
 {ref}`search`
