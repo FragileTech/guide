@@ -69,21 +69,36 @@ Online courses and step-by-step demonstrations explaining the most popular Git c
     https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History
     
 .. [rewriting_git_history2]
-    Tutorial listing the rewriting option Git offers.
+    Tutorial listing the rewriting options Git offers.
     
     https://www.atlassian.com/git/tutorials/rewriting-history#git-rebase-i
+    
+.. [sync_remote]
+    Explains how to work with remote repositories. Description of `git push` and `git pull` commands. 
+    
+    https://www.atlassian.com/git/tutorials/syncing
+
+.. [push]
+   `Git push` documentation page.
+   
+   https://git-scm.com/docs/git-push
+
+.. [pull]
+   `Git pull` documentation page. 
+   
+   https://git-scm.com/docs/git-pull
 ```
 
 ### GitHub
 #### Pull Requests (PR)
 ```{eval-rst}
 .. [about_pull_requests] 
-   Explains the basics about Pull requests
+   Explains the basics about Pull requests.
 
    https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests
 
 .. [creating_a_pull_requests] 
-   Tutorial about how to open a new pull request
+   Tutorial about how to open a new pull request.
 
    https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
    
@@ -141,7 +156,7 @@ Online courses and step-by-step demonstrations explaining the most popular Git c
 #### Reference
 ```{eval-rst}
 .. [github_docs] 
-   GitHub.com official documentation
+   GitHub.com official documentation.
 
    https://docs.github.com/en/github
 ```
@@ -179,7 +194,7 @@ Online courses and step-by-step demonstrations explaining the most popular Git c
    https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase
    
 .. [rebase-vs-merge]
-   A clear overview over the two merging strategies
+   A clear overview over the two merging strategies.
    
    https://www.atlassian.com/git/tutorials/merging-vs-rebasing
 ```
