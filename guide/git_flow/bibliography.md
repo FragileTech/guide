@@ -87,6 +87,15 @@ Online courses and step-by-step demonstrations explaining the most popular Git c
    `Git pull` documentation page. 
    
    https://git-scm.com/docs/git-pull
+   
+.. [git-stash]
+   Explains how to stash uncommitted changes with `git stash`.
+   
+   https://www.atlassian.com/git/tutorials/saving-changes/git-stash
+   
+.. [log]
+   Page listing the options offered by `git log`. 
+   https://www.atlassian.com/git/tutorials/inspecting-a-repository
 ```
 
 ### GitHub

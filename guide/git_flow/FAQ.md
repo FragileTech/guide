@@ -26,3 +26,7 @@ Being interesting utilities separately, the real collaborative environment boost
 #### What is a Pull Request?
 
 #### What is an Issue?
+
+#### What is a branch? 
+
+
