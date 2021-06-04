@@ -41,6 +41,45 @@ Online courses and step-by-step demonstrations explaining the most popular Git c
 
     https://www.pluralsight.com/courses/code-school-git-real
 ```
+
+#### Git Basics 
+```{eval-rst}
+.. [saving-changes]
+   Introductory tutorial to the saving process in Git. 
+   
+   https://www.atlassian.com/git/tutorials/saving-changes 
+   
+.. [recording-changes]
+   Page containing a complete description about the three-stage process in Git.
+   
+   https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
+
+.. [three-trees]
+   Page containing an introduction to Git's internal state management system and reset command. 
+   
+   https://www.atlassian.com/git/tutorials/undoing-changes/git-reset
+   
+.. [branch]
+   Explains the basics about branching in Git. 
+   
+   https://www.atlassian.com/git/tutorials/using-branches
+
+.. [merge-basic]
+   Gentle tutorial explaining the concepts and mechanisms behind `git merge`.
+   
+   https://www.atlassian.com/git/tutorials/using-branches/git-merge
+
+.. [rebase-basic]
+   Tutorial explaining the concepts and mechanisms behind `git rebase`.
+   
+   https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase
+   
+.. [rebase-vs-merge]
+   A clear overview over the two merging strategies.
+   
+   https://www.atlassian.com/git/tutorials/merging-vs-rebasing
+```
+
 #### Reference
 ```{eval-rst}
 .. [git_cheat_sheet] 
@@ -181,40 +220,4 @@ Online courses and step-by-step demonstrations explaining the most popular Git c
    https://docs.github.com/en/github
 ```
 
-#### Git Basics 
-```{eval-rst}
-.. [saving-changes]
-   Introductory tutorial to the saving process in Git. 
-   
-   https://www.atlassian.com/git/tutorials/saving-changes 
-   
-.. [recording-changes]
-   Page containing a complete description about the three-stage process in Git.
-   
-   https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
 
-.. [three-trees]
-   Page containing an introduction to Git's internal state management system and reset command. 
-   
-   https://www.atlassian.com/git/tutorials/undoing-changes/git-reset
-   
-.. [branch]
-   Explains the basics about branching in Git. 
-   
-   https://www.atlassian.com/git/tutorials/using-branches
-
-.. [merge-basic]
-   Gentle tutorial explaining the concepts and mechanisms behind `git merge`.
-   
-   https://www.atlassian.com/git/tutorials/using-branches/git-merge
-
-.. [rebase-basic]
-   Tutorial explaining the concepts and mechanisms behind `git rebase`.
-   
-   https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase
-   
-.. [rebase-vs-merge]
-   A clear overview over the two merging strategies.
-   
-   https://www.atlassian.com/git/tutorials/merging-vs-rebasing
-```
