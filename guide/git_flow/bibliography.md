@@ -120,7 +120,18 @@ Online courses and step-by-step demonstrations explaining the most popular Git c
    Explains how to reference issues from PRs and vice-versa.
    
    https://docs.github.com/en/github/writing-on-github/autolinked-references-and-urls#issues-and-pull-requests
+
+.. [issues-tools]
+   List of available features on Issues page. 
+   
+   https://guides.github.com/features/issues/
+
+.. [write-issue]
+   Good practices for writing a proper GitHub issue. 
+   
+   https://medium.com/nyc-planning-digital/writing-a-proper-github-issue-97427d62a20f
 ```
+
 #### Code reviews
 ```{eval-rst}
 .. [intro_code_reviews] 
