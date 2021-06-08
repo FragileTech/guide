@@ -41,6 +41,45 @@ Online courses and step-by-step demonstrations explaining the most popular Git c
 
     https://www.pluralsight.com/courses/code-school-git-real
 ```
+
+#### Git Basics 
+```{eval-rst}
+.. [saving-changes]
+   Introductory tutorial to the saving process in Git. 
+   
+   https://www.atlassian.com/git/tutorials/saving-changes 
+   
+.. [recording-changes]
+   Page containing a complete description about the three-stage process in Git.
+   
+   https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
+
+.. [three-trees]
+   Page containing an introduction to Git's internal state management system and reset command. 
+   
+   https://www.atlassian.com/git/tutorials/undoing-changes/git-reset
+   
+.. [branch]
+   Explains the basics about branching in Git. 
+   
+   https://www.atlassian.com/git/tutorials/using-branches
+
+.. [merge-basic]
+   Gentle tutorial explaining the concepts and mechanisms behind `git merge`.
+   
+   https://www.atlassian.com/git/tutorials/using-branches/git-merge
+
+.. [rebase-basic]
+   Tutorial explaining the concepts and mechanisms behind `git rebase`.
+   
+   https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase
+   
+.. [rebase-vs-merge]
+   A clear overview over the two merging strategies.
+   
+   https://www.atlassian.com/git/tutorials/merging-vs-rebasing
+```
+
 #### Reference
 ```{eval-rst}
 .. [git_cheat_sheet] 
@@ -87,6 +126,15 @@ Online courses and step-by-step demonstrations explaining the most popular Git c
    `Git pull` documentation page. 
    
    https://git-scm.com/docs/git-pull
+   
+.. [git-stash]
+   Explains how to stash uncommitted changes with `git stash`.
+   
+   https://www.atlassian.com/git/tutorials/saving-changes/git-stash
+   
+.. [log]
+   Page listing the options offered by `git log`. 
+   https://www.atlassian.com/git/tutorials/inspecting-a-repository
 ```
 
 ### GitHub
@@ -111,7 +159,18 @@ Online courses and step-by-step demonstrations explaining the most popular Git c
    Explains how to reference issues from PRs and vice-versa.
    
    https://docs.github.com/en/github/writing-on-github/autolinked-references-and-urls#issues-and-pull-requests
+
+.. [issues-tools]
+   List of available features on Issues page. 
+   
+   https://guides.github.com/features/issues/
+
+.. [write-issue]
+   Good practices for writing a proper GitHub issue. 
+   
+   https://medium.com/nyc-planning-digital/writing-a-proper-github-issue-97427d62a20f
 ```
+
 #### Code reviews
 ```{eval-rst}
 .. [intro_code_reviews] 
@@ -161,40 +220,4 @@ Online courses and step-by-step demonstrations explaining the most popular Git c
    https://docs.github.com/en/github
 ```
 
-#### Git Basics 
-```{eval-rst}
-.. [saving-changes]
-   Introductory tutorial to the saving process in Git. 
-   
-   https://www.atlassian.com/git/tutorials/saving-changes 
-   
-.. [recording-changes]
-   Page containing a complete description about the three-stage process in Git.
-   
-   https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
 
-.. [three-trees]
-   Page containing an introduction to Git's internal state management system and reset command. 
-   
-   https://www.atlassian.com/git/tutorials/undoing-changes/git-reset
-   
-.. [branch]
-   Explains the basics about branching in Git. 
-   
-   https://www.atlassian.com/git/tutorials/using-branches
-
-.. [merge-basic]
-   Gentle tutorial explaining the concepts and mechanisms behind `git merge`.
-   
-   https://www.atlassian.com/git/tutorials/using-branches/git-merge
-
-.. [rebase-basic]
-   Tutorial explaining the concepts and mechanisms behind `git rebase`.
-   
-   https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase
-   
-.. [rebase-vs-merge]
-   A clear overview over the two merging strategies.
-   
-   https://www.atlassian.com/git/tutorials/merging-vs-rebasing
-```
