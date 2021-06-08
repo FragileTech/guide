@@ -4,7 +4,8 @@ and collaboration among team members. Despite the countless benefits Git offers,
 and dedication to learn and master. In this section, we will try to cover and define the most 
 general Git concepts that may lead to misleading conclusions. Having an accurate understanding of 
 these terms will notably facilitate your learning path. This section summarizes the content of 
-different reviews and guides presented throughout this page; we strongly encourage practicing the 
+different reviews and guides (highlighted throughout this page); we strongly encourage practicing 
+the 
 core Git utilities using {ref}`this lab<git_lab_branching>`, which includes a 
 beginner-oriented tour about the basic concepts you are working on. 
 
@@ -22,13 +23,13 @@ Three stages of Git.
 
 
 Every file in a Git repository goes through three stages: __modified__, __staged__ and __committed__.
- * _Modified_ is the stage where you add new features (or _modifications_) to the 
+ * _Modified_ is the stage where you can add new features (or _modifications_) to the 
 project. Changes are applied in the working directory (the Git tree in sync with your local 
 machine), leaving unchanged the original code.
  * The second step is tracking modified files. The command `git add [files]` updates the 
-Git index using the provided `files` and pushes them to the _staging_ area. Files included in 
+Git index using the given `files` and pushes them to the _staging_ area. Files included in 
 this "space" are monitored by Git, notifying when new changes are applied. This area is the 
-previous step to commit your latest modifications; it stores the changes that you 
+previous step to commit your latest modifications: it stores the changes that you 
 want to include in the next snapshot.   
  * The last step consists in _committing_ your modifications. `git commit` records a snapshot of 
 the changes kept in the staging area while creating a new timestamp in the history. Adding the 
@@ -75,19 +76,26 @@ commits), but they are references to specific commits. Developers usually repres
 as independent ramifications (or bifurcations) from the main development line. They are built 
 using the `git branch` command or `git checkout -b`. 
 
-Consider the scenario illustrated in the figure, where you have committed a recent change. When 
+Consider the scenario illustrated in the figure below, where you have committed a recent change. 
+When 
 using the command 
 `git checkout -b new_feature` (or `git branch new_feature`), you are creating a new pointer 
 labeled `new_feature` that refers to the last commit while maintaining the repository 
-__unchanged__. And what is the usefulness of this operation? Although at first glance it might 
+__unchanged__. That being said, a natural question may arise: what is the usefulness of creating 
+a new reference? Although at first glance this operation might 
 seem useless, branches reach their full potential as we generate new commits.
 
-Moving to the branch that we created, new committed additions will be referred to by 
-`new_feature`. Finished our task, we can return to our principal branch by using the command `git 
-checkout main` (remember, branches are simply references; as illustrated in the figure, `main` is a 
-tip pointing to _c2_). Sitting on `main`, we will develop a __ramification__ when committing a new 
-change. Despite being conceived by the same commit _c2_, _c3_ and _c4_ are disconnected entities 
-that "exist" in different branches. Coming back to `new_feature`, we can make 
+Moving to the branch that we created (`new_feature`), subsequent commits (for example, _c3_) will 
+be referred to by 
+the latter. Once we have finished our task, we return to our principal branch (`main`) by 
+using the command 
+`git checkout main` (remember, branches are simply references; as illustrated in the figure, `main` 
+is a 
+tip pointing to the commit _c2_). Sitting on `main`, we will develop a __ramification__ when 
+committing a new 
+change (in this case, called _c4_). Despite being conceived by the same commit _c2_, _c3_ and _c4_ 
+are disconnected entities 
+that "exist" in different branches. If we come back to `new_feature`, we can make 
 further commits that depend neither on _c4_ nor on `main`. As mentioned at the beginning, we are 
 able to write new code without affecting the main development line. 
 
@@ -98,24 +106,22 @@ able to write new code without affecting the main development line.
 
 ![branch1](images/branch1.png)
 
-Branches are __pointers__ to specific commits in Git history. Sitting on the commit referred to by 
-`main`, we create a new branch labeled as `new_feature`. All subsequent commits will be 
-referred to by this latter branch. 
+Branches are __pointers__ to specific commits in Git history. Sitting on the commit _c2_ 
+(which is referred to by 
+`main`), we can create a new branch named as `new_feature`. All subsequent commits (as 
+_c3_) will be 
+referred to by this newly created branch. 
 :::
-
 :::{figure-md} branch2
 :width: 310px
 :align: right
 
 ![branch2](images/branch2.png)
 
-Once we have created the new commit _c3_, we go back to the branch `main`. A new commit 
-will generate a bifurcation or fork in the Git history. Commits from different branches (in 
-this case, _c3_ and _c4_) are disconnected.
+Once we have created the new commit _c3_, we go back to the branch `main`. A new commit _c4_
+will generate a bifurcation or fork in the Git history. Commits from different branches (_c3_ and 
+_c4_) are disconnected.
 :::
-
-<br/><br/>
-
 Once we are satisfied with the changes made in our code, we can integrate the multiple 
 commits created in our supporting branch into the mainline by using `git merge`. This sentence 
 generates a dedicated commit that combines the development of the two branches (current and 
@@ -133,8 +139,8 @@ modifications made on the target branch, leaving the latter unaffected.
 :::
 
 Closely related to the fact that branches act as a pointer is the concept of `HEAD`. `HEAD` is the 
-name used to refer to the commit we are working on. It frequently points to the most recent commit 
-(also referred to by the current branch). We can change the position of `HEAD` by using 
+name used to refer to the commit we are working on. It frequently points to the most recent commit. 
+We can change the position of `HEAD` by using 
 the command `git checkout` (actually, when you are applying this sentence for switching between 
 branches, what Git is doing is migrating the tip `HEAD` from one branch to the other). We can move 
 `HEAD` to a specific commit (and detached it from a branch) using the command `git checkout` plus 
@@ -172,7 +178,8 @@ The command `git merge` combines the content from two different branches into a 
 commit. The process is the following: `git merge` takes two branch pointers and identifies their 
 common commit ancestor. Once Git locates this point, it generates a unique "merge commit" (on 
 the branch we are currently working on) that combines all committed changes from their common 
-parent. This new commit is unique in the sense that it depends on two parent commits. `git merge` 
+parent. This new commit is unique in the sense that it depends on two parent commits. One 
+should notice that `git merge` 
 only modifies the current branch; the target branch history remains unaltered (as illustrated in 
 the previous figure). 
 
@@ -208,8 +215,8 @@ repository, facilitating the merging process.
 Consider the following scenario: you have worked for several days on an additional feature for a 
 program. Meanwhile, the mainline has been updated multiple times by your 
 teammates, leaving your files obsolete. If you want to push your work to remote and open a Pull 
-Request to merge your fresh additions, a good practice is rebasing your content with the most 
-updated version of the remote repository.
+Request to merge your latest additions, a good practice is rebasing your content with the most 
+updated version of the remote repository:
 
 1. First, you have to download the remote main branch to include all these new modifications 
 added by your colleagues: 
@@ -235,8 +242,9 @@ widely recommended) before pushing your modifications to remote; you can rectify
 reorganize your history, and keep the number of commits to a minimum.
 
 `git rebase` not only allows you to rewrite your history, but it reinforces the concept of 
-branches as pointers. Next to `git rebase` must be a reference: either the label that refers to an 
-individual commit (to rewrite your history); or a target branch to integrate your changes linearly.
+branches as pointers. Next to `git rebase` must always be a __reference__: either the label that 
+refers to an 
+individual commit (to rewrite your history), or a target branch to integrate your changes linearly.
 
 :::{admonition} Resources
 :class: seealso 

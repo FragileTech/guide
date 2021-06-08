@@ -81,7 +81,7 @@ identify the corresponding commit.
 #### Interactive rebase
 `Git rebase --interactive` is broadly used to review commit changes and apply further 
 modifications to old commits. The unflagged command, `git rebase`, is used to compress the changes 
-made on the source branch, and apply them on top of the target branch, achieving in this way a 
+made on the source branch and apply them on top of the target branch, achieving in this way a 
 flat Git history. `git rebase` also avoids merging conflicts when pushing new 
 content to remote repositories, as it allows the coder to rebase his/her local changes on top of 
 the most recent version stored in remote. 
@@ -109,7 +109,7 @@ desired Git history.
 You have probably needed to switch branches while working on some feature of a 
 project. Git does not allow you to checkout to another branch without committing the modified 
 files. One can use `git stash` to temporarily shelve these changes, so you can freely move through 
-the Git history, work on new features and, once you are done, come back and _unstash_ the 
+the Git history, work on new features and, once you have finished, come back and _unstash_ the 
 modifications. This command becomes extremely useful when your code is not ready to be committed, 
 but you need to switch to a different working environment. As mentioned, `git stash` saves your 
 uncommitted changes for later use, allowing you to create new commits, modify new files or switch 
