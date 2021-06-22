@@ -66,7 +66,7 @@ One can find more information about Pull Requests and Issues along these pages:
 When developing new features, coders work in safe spaces where their changes do not affect 
 the project's mainline. Most VCS's offer a secure, virtual environment so that programmers can 
 work freely without worrying about "corrupting" the project. Git goes one step further in 
-providing these isolated environments, promoting the use of branches. Git branches are 
+providing these isolated environments by promoting the use of branches. Git branches are 
 merely pointers, references to committed changes. As one develops new features and stores them, 
 the branch represents the tip of that series of commits. In this way, Git branches are
 notably lightweight, as they are not containers keeping incoming commits (remember, they are solely 

@@ -21,4 +21,6 @@ caption: Python Development
 ---
 guide/python/environment_setup.md
 guide/python/python_style_guide.md
+guide/python/python_intro.md
+guide/python/bibliography.md
 ```
