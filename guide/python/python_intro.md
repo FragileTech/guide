@@ -78,8 +78,8 @@ of operations, allowing the manipulation of the stored data. Python has four typ
    
 1. __Float Data Structures__ are used for designating rational numbers. Float numbers in Python 
    are represented as 64-bit (double-precision) values. The maximum value a float value can 
-   have is {math}`1.8 \times 10^{308}{math}`, while the minimum number one can represent is 
-   {math}`5.8 \times 10^{-324}{\math}`. One should notice that Integer Structures are 
+   have is {math}`1.8 \times 10^{308}`, while the minimum number one can represent is 
+   {math}`5.8 \times 10^{-324}`. One should notice that Integer Structures are 
    _promoted_ to float numbers when operating with Float Data Structures. In this way, 
    the operation `3 + 4.0` 
    yields `7.0`; the integer number `3` is implicitly converted to the float number `3.0` to 
