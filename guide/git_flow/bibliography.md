@@ -140,6 +140,11 @@ Online courses and step-by-step demonstrations explaining the most popular Git c
 ### GitHub
 #### Pull Requests (PR)
 ```{eval-rst}
+.. [quick_rundown_video] 
+   freeCodeCamp Youtube Video to understand basic UI of GitHub
+   
+   https://www.youtube.com/watch?v=yzeVMecydCE&t=2206s&ab_channel=freeCodeCamp.org
+
 .. [about_pull_requests] 
    Explains the basics about Pull requests.
 
